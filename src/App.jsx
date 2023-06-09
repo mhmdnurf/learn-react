@@ -1,13 +1,5 @@
-import ToDoList from "./ToDoList";
-import MyName from "./MyName";
-import Profile from "./Avatar";
-import Clock from "./Clock";
-import PackingList from "./PackingList";
-import List from "./List";
+import Gallery from "./adding_interactivity/Gallery";
+import Toolbar from "./adding_interactivity/Toolbar";
 export default function App() {
-  return (
-    <>
-      <List />
-    </>
-  );
+  return <Gallery />;
 }

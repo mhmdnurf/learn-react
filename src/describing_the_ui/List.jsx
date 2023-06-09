@@ -45,7 +45,9 @@ const List = () => {
   const chemist = people.filter((person) => person.profession === "chemist");
 
   const listItems = chemist.map((person) => (
-    <li>
+    <li key={person.id}style={{
+      listStyle: 'none'
+    }}>
       <img src={getImageUrl(person)} alt={person.name} />
       <p>
         <b>{person.name}:</b>
